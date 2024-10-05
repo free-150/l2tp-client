@@ -10,8 +10,8 @@ RUN apt-get update && \
 RUN mkdir -p /etc/xl2tpd
 
 # 将启动脚本复制到容器中
-COPY start-vpn.sh vpn-configs.sh /usr/local/bin/
-RUN chmod +x /usr/local/bin/start-vpn.sh && chmod +x /usr/local/bin/vpn-configs.sh
+COPY start-vpn.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/start-vpn.sh
 
 # 设置环境变量
 ENV VPN_SERVER_IP=''
