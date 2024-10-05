@@ -1,9 +1,10 @@
+#!/usr/bin/env bash
 # 创建 xl2tpd 控制文件
 mkdir -p /var/run/xl2tpd
 touch /var/run/xl2tpd/l2tp-control
 
 # 启动服务
-service strongswan restart
+ipsec restart
 service xl2tpd restart
 
 # 开始 IPsec 连接

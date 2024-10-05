@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # 检查必需的环境变量
 if [[ -z "$VPN_SERVER_IP" || -z "$VPN_IPSEC_PSK" || -z "$VPN_USER" || -z "$VPN_PASSWORD" ]]; then

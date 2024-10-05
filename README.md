@@ -1,3 +1,6 @@
+### 适用范围
+- Ubuntu and Debian
+
 ### 下载构建文件
 ```shell
 git clone https://github.com/free-150/l2tp-client.git
